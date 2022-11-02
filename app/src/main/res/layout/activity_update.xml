@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="16dp"
+    tools:context=".Update">
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_arrow"
+        android:background="@drawable/background_btn"
+        android:scaleType="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/back_button"
+        />
+
+    <TextView
+        android:id="@+id/tvSave"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:background="@drawable/background_btn"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/etUpdateTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title_note"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSave"
+        android:padding="15dp"
+        android:textSize="@dimen/note_title"
+        android:textStyle="bold"
+        android:maxLines="1"/>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUpdateTitle"
+        android:background="#212529"/>
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:text="13/02/2020"
+        android:visibility="visible"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/note_date"
+        />
+
+
+    <EditText
+        android:id="@+id/etUpdateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/type_something"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Date"
+        android:padding="15dp"
+        android:textSize="@dimen/note_text"
+        android:gravity="top"
+        android:minHeight="150dp"
+        android:inputType="textMultiLine"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">NoteApp</string>
+    <string name="Notes">Notes</string>
+    <string name="new_note">open empty note</string>
+    <string name="back_button">back Button</string>
+    <string name="save">Save</string>
+    <string name="title_note">Title</string>
+    <string name="type_something">Type something</string>
+    <string name="lemon">lemon color</string>
+    <string name="yellow">color yellow</string>
+    <string name="lilac">lilac color</string>
+    <string name="peach">peach color</string>
+    <string name="orange">orange color</string>
+    <string name="dark_brown">dark_brown color</string>
+    <string name="brown">brown color</string>
+    <string name="color_palette">color_palette</string>
+    <string name="search">Search</string>
+</resources>

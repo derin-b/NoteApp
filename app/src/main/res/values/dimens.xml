@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title">40sp</dimen>
+    <dimen name="note_title">25sp</dimen>
+    <dimen name="note_text">20sp</dimen>
+    <dimen name="note_date">15sp</dimen>
+</resources>
